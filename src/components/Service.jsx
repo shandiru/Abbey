@@ -14,56 +14,56 @@ const ExpandingCards = () => {
       title: 'Full Service',
       description: 'A comprehensive inspection and maintenance of all major vehicle systems, including oil change, filters, fluids, and a full mechanical check.',
       image: 'https://images.unsplash.com/photo-1486006396113-ad75047f0d2e?q=80&w=2000&auto=format&fit=crop',
-      tags: 'Full Inspection · Oil & Filters · Mechanical Check',
+     
     },
     {
       number: '02',
       title: 'Half Service',
       description: 'A basic check covering essential items like oil, oil filter, and key fluid levels to keep your vehicle running smoothly between full services.',
       image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop',
-      tags: 'Basic Maintenance · Fluid Levels · Essential Check',
+      
     },
     {
       number: '03',
       title: 'Brakes',
       description: 'Full inspection and repair of your braking system, including discs, calipers, and fluid, to ensure safe and responsive stopping power.',
       image: 'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=2000&auto=format&fit=crop',
-      tags: 'Safe Stopping · Discs & Calipers · Brake Fluid',
+     
     },
     {
       number: '04',
       title: 'Brake Pads',
-      description: 'Replacement of worn brake pads to maintain effective braking performance and prevent damage to your discs.',
+      description: ' Replacement of worn brake pads to maintain effective braking performance and prevent damage to your discs.',
       image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=2000&auto=format&fit=crop',
-      tags: 'Performance · Component Care · Safety First',
+     
     },
     {
       number: '05',
       title: 'Clutches',
       description: 'Diagnosis and replacement of a worn or slipping clutch to restore smooth gear changes and reliable power transfer.',
       image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2000&auto=format&fit=crop',
-      tags: 'Smooth Shifting · Power Transfer · Expert Diagnosis',
+      
     },
     {
       number: '06',
       title: 'Exhausts',
       description: 'Inspection, repair, or replacement of exhaust components to reduce emissions, eliminate noise, and maintain engine efficiency.',
       image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2000&auto=format&fit=crop',
-      tags: 'Efficiency · Noise Reduction · Emission Control',
+      
     },
     {
       number: '07',
       title: 'Bearing Work',
       description: 'Detection and replacement of worn wheel or engine bearings to eliminate noise, vibration, and prevent further mechanical damage.',
       image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop',
-      tags: 'Wheel Bearings · Noise Fix · Smooth Ride',
+     
     },
     {
       number: '08',
       title: 'MOT',
       description: 'An official government-required annual test to ensure your vehicle meets the minimum road safety and environmental standards.',
       image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2000&auto=format&fit=crop',
-      tags: 'Annual Test · Safety Standards · Road Worthiness',
+     
     },
   ];
 
@@ -115,7 +115,7 @@ const ExpandingCards = () => {
     >
       {/* Header */}
       <div className="mb-10 md:mb-14 text-center">
-        <span className="text-[#3B82F6] text-xs font-bold uppercase tracking-widest">Expert Vehicle Care</span>
+      
         <h2 className="text-[#0F172A] dark:text-white text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-widest mt-2">
           Our Services
         </h2>
@@ -159,9 +159,7 @@ const ExpandingCards = () => {
                 <div className="w-full h-48 sm:h-64 overflow-hidden rounded-xl border border-gray-200 dark:border-[#3D4B5E]">
                   <img src={cards[activeCard].image} alt={cards[activeCard].title} className="w-full h-full object-cover" />
                 </div>
-                <div className="text-[10px] font-bold tracking-widest text-[#3B82F6] uppercase mt-auto">
-                  {cards[activeCard].tags}
-                </div>
+                
               </div>
             </div>
           </div>

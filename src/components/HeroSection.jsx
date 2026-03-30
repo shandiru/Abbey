@@ -42,10 +42,7 @@ const HeroSection = () => {
 
           {/* LEFT CONTENT */}
           <div className="space-y-6 text-left" data-aos="fade-right">
-            <div className="inline-flex items-center gap-2 bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-full px-4 py-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#3B82F6] animate-pulse" />
-              <span className="text-[#3B82F6] text-xs font-semibold uppercase tracking-wider">Now Accepting Bookings</span>
-            </div>
+           
 
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-black leading-tight text-black dark:text-white mt-10 md:mt-0">
               <span className="text-[#3B82F6]">Abbey Tyres</span>

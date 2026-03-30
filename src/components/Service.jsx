@@ -62,7 +62,7 @@ const ExpandingCards = () => {
       number: '08',
       title: 'MOT',
       description: 'An official government-required annual test to ensure your vehicle meets the minimum road safety and environmental standards.',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2000&auto=format&fit=crop',
+      image: '/mot.png',
      
     },
   ];

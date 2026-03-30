@@ -50,7 +50,7 @@ const Header = () => {
                 className="flex items-center gap-2 text-[#CBD5E1] hover:text-white transition-colors"
               >
                 <Phone size={14} className="text-[#3B82F6]" />
-                <span className="font-medium text-sm">+44 775 236 4546</span>
+                <span className="font-medium text-sm">+44 773 798 5510</span>
               </a>
               <div className="h-4 w-px bg-[#3D4B5E] hidden md:block" />
               <a
@@ -58,7 +58,7 @@ const Header = () => {
                 className="flex items-center gap-2 text-[#CBD5E1] hover:text-white transition-colors"
               >
                 <Mail size={14} className="text-[#3B82F6]" />
-                <span className="font-medium text-sm">tom@acgautocentre.co.uk</span>
+                <span className="font-medium text-sm">example@gmail.com</span>
               </a>
             </div>
             <div className="flex items-center gap-2 text-sm font-medium text-[#CBD5E1]">

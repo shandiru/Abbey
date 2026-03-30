@@ -3,31 +3,31 @@ import React, { useState } from "react";
 const testimonials = [
   {
     id: 1,
-    quote: "Abbey Tyres did an amazing job. Fast service and very reasonable prices. They kept me informed throughout the process. Highly recommend them for anyone needing new tyres or repairs.",
-    name: "Kitti Nangtalar",
-    location: "UK",
-    avatar: "1.png",
+    quote: "Excellent customer service, very knowledgeable staff, sorted out new tyres within 30 mins for a very reasonable price! Keep up the good work.",
+    name: "Mohamed Patel",
+    role: "Customer",
+    color: "bg-blue-500",
   },
   {
     id: 2,
-    quote: "Excellent service on my van. Had a puncture and they sorted it out in no time. One of the few places willing to help on short notice. Very professional team.",
-    name: "Jerome Mowat",
-    location: "UK",
-    avatar: "2.png",
+    quote: "Absolutely wonderful little business to go to! I had been let down by a major online company for some new tyres and they were pivotal to me passing my MOT. I rang Abbey Tyres and they were able to get me in same day for some part worns that would get me through my MOT. While I waited the owner and I chatted away, he was so kind and easy to talk to. The tyres were fitted within 15 minutes and I was away! I definitely recommend and will be returning in future.",
+    name: "Lottie Giblin",
+    role: "Repeat Client",
+    color: "bg-emerald-500",
   },
   {
     id: 3,
-    quote: "My car needed a full set of tyres. The team at Abbey Tyres provided honest advice and a high standard of work. Will definitely be coming back for future services.",
-    name: "Jay J",
-    location: "UK",
-    avatar: "3.png",
+    quote: "I drove 50 mins to this guy he had the only part worn tyres in the super rare size I needed. I called every shop in Coventry and Birmingham before I called him. He sold them to me at a fair price, good service — guy was run off his feet but still offered me a drink. Really nice chap and great customer service. Definitely recommend.",
+    name: "Dilraj Singh",
+    role: "Fleet Manager",
+    color: "bg-purple-500",
   },
   {
     id: 4,
-    quote: "Perfect delivery and top-quality parts. The car feels brand new on the road. Great communication and super impressed with the turnaround time.",
-    name: "Phoebe Potkins",
-    location: "UK",
-    avatar: "4.png",
+    quote: "Excellent service. I took my Mercedes to Abbey Tyres for its wheel issue. They fixed the issue at a courteous, timely, and competitive price.",
+    name: "Stephen Mathew",
+    role: "Fleet Manager",
+    color: "bg-orange-500",
   },
 ];
 
@@ -58,7 +58,7 @@ const Review = () => {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* Glow accents (visible primarily in dark mode) */}
+      {/* Glow accents */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#3B82F6]/5 dark:bg-[#3B82F6]/8 blur-[140px] rounded-full -translate-x-1/3 -translate-y-1/3" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-[#3B82F6]/3 dark:bg-[#3B82F6]/5 blur-[120px] rounded-full translate-x-1/4 translate-y-1/4" />
@@ -66,29 +66,16 @@ const Review = () => {
 
       {/* Header */}
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mb-14" data-aos="fade-up">
-        <div data-aos="fade-right">
-          <p className="text-[#3B82F6] uppercase tracking-[5px] text-xs font-semibold mb-2">
-            Testimonials
-          </p>
+        <div>
           <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-black dark:text-white">
             What Our <span className="text-[#3B82F6]">Customers</span> Say
           </h2>
           <p className="text-gray-600 dark:text-[#CBD5E1] text-sm mt-3 max-w-lg">
-            At Abbey Tyres, we're committed to honest advice, quality parts, and service you can count on. Don't just take our word for it, here's what our customers think.
+            At Abbey Tyres, we're committed to honest advice, quality parts, and service you can count on.
           </p>
         </div>
 
-        <button
-          onClick={() => scrollToSection("contact")}
-          data-aos="zoom-in"
-          data-aos-delay="200"
-          className="mt-8 md:mt-0 flex items-center gap-2 bg-[#3B82F6] hover:bg-blue-400 text-white font-semibold uppercase px-7 py-2.5 rounded-lg transition-all duration-300 hover:shadow-[0_0_24px_rgba(59,130,246,0.5)] text-sm"
-        >
-          Book Your Service
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+       
       </div>
 
       {/* Scrolling Rows Container */}
@@ -101,17 +88,22 @@ const Review = () => {
           {[...testimonials, ...testimonials].map((item, i) => (
             <div
               key={`row1-${i}`}
-              className="bg-gray-50 dark:bg-[#1E293B] border border-gray-200 dark:border-[#3D4B5E] rounded-2xl p-6 flex flex-col justify-between shrink-0 hover:border-[#3B82F6]/50 hover:shadow-xl dark:hover:shadow-[0_0_20px_rgba(59,130,246,0.1)] transition-all duration-300 w-[360px] h-[320px]"
+              className="bg-gray-50 dark:bg-[#1E293B] border border-gray-200 dark:border-[#3D4B5E] rounded-2xl p-6 flex flex-col justify-between shrink-0 hover:border-[#3B82F6]/50 hover:shadow-xl transition-all duration-300 w-[360px] h-[320px]"
             >
-              <StarRating />
-              <p className="italic text-gray-700 dark:text-[#CBD5E1] text-[14px] leading-relaxed line-clamp-7 overflow-hidden">
-                "{item.quote}"
-              </p>
+              <div>
+                <StarRating />
+                <p className="italic text-gray-700 dark:text-[#CBD5E1] text-[14px] leading-relaxed line-clamp-7 overflow-hidden">
+                  "{item.quote}"
+                </p>
+              </div>
               <div className="flex items-center gap-3 mt-4">
-                <img src={item.avatar} alt={item.name} className="w-9 h-9 rounded-full object-cover border border-[#3B82F6]/30" />
+                {/* Initial Letter Avatar */}
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-sm ${item.color}`}>
+                  {item.name.charAt(0)}
+                </div>
                 <div>
                   <h4 className="text-black dark:text-white font-semibold text-sm">{item.name}</h4>
-                  <p className="text-gray-500 dark:text-[#CBD5E1]/60 text-xs">{item.location}</p>
+                  <p className="text-gray-500 dark:text-[#CBD5E1]/60 text-xs">{item.role}</p>
                 </div>
               </div>
             </div>
@@ -126,17 +118,22 @@ const Review = () => {
           {[...testimonials, ...testimonials].map((item, i) => (
             <div
               key={`row2-${i}`}
-              className="bg-gray-50 dark:bg-[#1E293B] border border-gray-200 dark:border-[#3D4B5E] rounded-2xl p-6 flex flex-col justify-between shrink-0 hover:border-[#3B82F6]/50 hover:shadow-xl dark:hover:shadow-[0_0_20px_rgba(59,130,246,0.1)] transition-all duration-300 w-[340px] h-[300px]"
+              className="bg-gray-50 dark:bg-[#1E293B] border border-gray-200 dark:border-[#3D4B5E] rounded-2xl p-6 flex flex-col justify-between shrink-0 hover:border-[#3B82F6]/50 hover:shadow-xl transition-all duration-300 w-[340px] h-[300px]"
             >
-              <StarRating />
-              <p className="italic text-gray-700 dark:text-[#CBD5E1] text-[14px] leading-relaxed line-clamp-6 overflow-hidden">
-                "{item.quote}"
-              </p>
+              <div>
+                <StarRating />
+                <p className="italic text-gray-700 dark:text-[#CBD5E1] text-[14px] leading-relaxed line-clamp-6 overflow-hidden">
+                  "{item.quote}"
+                </p>
+              </div>
               <div className="flex items-center gap-3 mt-4">
-                <img src={item.avatar} alt={item.name} className="w-9 h-9 rounded-full object-cover border border-[#3B82F6]/30" />
+                {/* Initial Letter Avatar */}
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-sm ${item.color}`}>
+                  {item.name.charAt(0)}
+                </div>
                 <div>
                   <h4 className="text-black dark:text-white font-semibold text-sm">{item.name}</h4>
-                  <p className="text-gray-500 dark:text-[#CBD5E1]/60 text-xs">{item.location}</p>
+                  <p className="text-gray-500 dark:text-[#CBD5E1]/60 text-xs">{item.role}</p>
                 </div>
               </div>
             </div>

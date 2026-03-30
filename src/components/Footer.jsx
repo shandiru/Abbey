@@ -52,14 +52,7 @@ const UniqueFooter = () => {
             <p className="text-[#CBD5E1] text-sm leading-relaxed mb-8">
               Professional tyre services and MOT testing in Nottingham.
             </p>
-            <div className="flex gap-3">
-              <a href="#" className="w-10 h-10 rounded-lg border border-[#3D4B5E] flex items-center justify-center hover:bg-[#3B82F6] transition-all group">
-                <Facebook size={16} className="text-[#CBD5E1] group-hover:text-white" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-lg border border-[#3D4B5E] flex items-center justify-center hover:bg-[#3B82F6] transition-all group">
-                <Instagram size={16} className="text-[#CBD5E1] group-hover:text-white" />
-              </a>
-            </div>
+            
           </div>
 
           {/* Navigation Column */}

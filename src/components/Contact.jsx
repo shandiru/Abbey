@@ -11,9 +11,7 @@ const HOURS = [
 ];
 
 const SERVICES = [
-  "New Tyres", "Puncture Repair", "Wheel Balancing", "Wheel Alignment",
-  "MOT Testing", "Full Service", "Half Service", "Brake Repairs",
-  "Suspension Work", "Exhausts", "Battery Check",
+  "Full Service","Half Service ","Brakes","Brake Pads ","Clutches","Exhausts","Bearing Work ","MOT"
 ];
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -85,7 +83,7 @@ export default function ContactSection() {
     const phone = formData.get("phone");
     const message = formData.get("message");
     const messageText = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${selectedService}\nMessage: ${message}`;
-    const whatsappUrl = `https://wa.me/+447850953737?text=${encodeURIComponent(messageText)}`;
+    const whatsappUrl = `https://wa.me/+447737985510?text=${encodeURIComponent(messageText)}`;
     window.open(whatsappUrl, "_blank");
     setStatus({ state: "success", message: "Opening WhatsApp..." });
     formRef.current.reset();
@@ -119,12 +117,13 @@ export default function ContactSection() {
               <div>
                 <p className="text-[#3B82F6] font-bold text-[10px] uppercase tracking-wider mb-1">Address</p>
                 <address className="not-italic text-gray-600 dark:text-[#CBD5E1] leading-relaxed">
-                  29 Church St, Old Basford<br />Nottingham NG6 0GA<br />United Kingdom
+                  123 Abbey Rd., London NW6 4DN<br />United Kingdom
+                   
                 </address>
               </div>
               <div>
                 <p className="text-[#3B82F6] font-bold text-[10px] uppercase tracking-wider mb-1">Phone</p>
-                <a href="tel:+447846953888" className="text-gray-600 dark:text-[#CBD5E1] hover:text-[#3B82F6] transition-colors">07846 953888</a>
+                <a href="tel:++447737985510" className="text-gray-600 dark:text-[#CBD5E1] hover:text-[#3B82F6] transition-colors">07737 985510</a>
               </div>
               <div>
                 <p className="text-[#3B82F6] font-bold text-[10px] uppercase tracking-wider mb-2">Opening Hours</p>

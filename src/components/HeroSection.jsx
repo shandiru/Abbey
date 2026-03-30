@@ -58,7 +58,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up">
               <a
-                href="tel:+447846953888"
+                href="tel:+447737985510"
                 className="inline-flex items-center justify-center gap-2 text-sm bg-[#3B82F6] hover:bg-blue-600 text-white h-11 rounded-lg px-6 font-semibold transition-all duration-300 hover:shadow-[0_0_24px_rgba(59,130,246,0.5)]"
               >
                 <FaPhone className="h-4 w-4" />
@@ -80,7 +80,7 @@ const HeroSection = () => {
               <div>
                 <p className="font-semibold text-black dark:text-white">Location</p>
                 <p className="text-sm text-gray-600 dark:text-[#CBD5E1]">
-                  29 Church St, Old Basford, Nottingham NG6 0GA
+                   123 Abbey Rd., London NW6 4DN, UK
                 </p>
               </div>
             </div>

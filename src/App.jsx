@@ -7,7 +7,7 @@ import Home from "./page/Home";
 import Footer from "./components/Footer";
 import  PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/Term";
-
+import AssuranceWidget from "./components/AssuranceWidget";
 function App() {
   return (
     <Router>
@@ -20,7 +20,7 @@ function App() {
       </Routes>
       <Footer />
       <GDPRConsent />
-     
+      <AssuranceWidget />
     </Router>
   );
 }

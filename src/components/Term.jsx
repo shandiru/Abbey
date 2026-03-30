@@ -1,5 +1,4 @@
-// src/pages/TermsConditions.js
-import React from "react";
+
 
 const TermsConditions = () => {
   return (

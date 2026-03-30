@@ -1,5 +1,4 @@
-"use client";
-import React from "react";
+
 
 const tyreBrands = [
   { name: "Goodyear", image: "/brand-1.png" },

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import  { useState, useEffect, useMemo } from 'react';
 
 const ExpandingCards = () => {
   const [activeCard, setActiveCard] = useState(0);
@@ -217,7 +217,7 @@ const ExpandingCards = () => {
         )}
       </div>
 
-      {/* Pagination Dots */}
+      
       <div className="flex gap-2 mt-8">
         {cards.map((_, i) => (
           <button

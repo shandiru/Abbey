@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import  { useState, useRef } from "react";
 
 const HOURS = [
   { day: "Monday", time: "8:30 am – 5:30 pm" },

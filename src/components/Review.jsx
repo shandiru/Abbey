@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const testimonials = [
   {
@@ -145,26 +145,7 @@ const Review = () => {
       <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-white dark:from-[#0F172A] to-transparent pointer-events-none z-20" />
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white dark:from-[#0F172A] to-transparent pointer-events-none z-20" />
 
-      <style>{`
-        @keyframes scroll-left {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        @keyframes scroll-right {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
-        }
-        .animate-scroll-left {
-          animation: scroll-left 45s linear infinite;
-          display: flex;
-          width: max-content;
-        }
-        .animate-scroll-right {
-          animation: scroll-right 50s linear infinite;
-          display: flex;
-          width: max-content;
-        }
-      `}</style>
+      
     </section>
   );
 };

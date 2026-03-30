@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function GDPRConsent() {
-  const [visible, setVisible] = useState(false); // Show consent banner
-  const [accepted, setAccepted] = useState(null); // true/false/null
-  const [showIcon, setShowIcon] = useState(false); // Show cookie icon
+  const [visible, setVisible] = useState(false);
+  const [accepted, setAccepted] = useState(null);
+  const [showIcon, setShowIcon] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const consent = localStorage.getItem("gdprConsent");
     if (consent === "true" || consent === "false") {
       setAccepted(consent === "true");
-      setShowIcon(true); // show cookie icon if previously chosen
+      setShowIcon(true);
     } else {
-      setVisible(true); // no previous choice
+      setVisible(true);
     }
   }, []);
 
@@ -30,7 +32,6 @@ export default function GDPRConsent() {
   };
 
   const handleIconClick = () => {
-    // Reopen consent banner
     setVisible(true);
     setShowIcon(false);
   };
@@ -39,33 +40,36 @@ export default function GDPRConsent() {
     <>
       {/* Cookie Banner */}
       {visible && (
-        <div className="fixed bottom-4 left-4 right-4 md:bottom-6 text-center md:right-6 md:left-auto max-w-full md:max-w-xs p-4 rounded-lg 
-                         text-gray-900 shadow-lg z-50 
-                      bg-gray-900  transition-colors">
-          <p className="text-sm mb-2 text-center text-white">
-            We use cookies to improve your experience.{" "}
-          </p>
-          <p className="mb-3">
-            <a
-              href="/privacy"
-              className="underline text-[#6F6F6F] hover:text-gray-600 "
+        <div className="fixed bottom-4 left-4 right-4 md:bottom-6 md:right-6 md:left-auto max-w-full md:max-w-xs p-5 rounded-2xl 
+                        shadow-2xl z-50 bg-[#1E293B] border border-[#3D4B5E] transition-all duration-300">
+          <div className="flex items-center gap-3 mb-3">
+            {/* changed from red to blue */}
+            <div className="w-2 h-2 rounded-full bg-[#3B82F6] animate-pulse" />
+            <p className="text-sm font-bold text-white uppercase tracking-wider">
+              Cookie Settings
+            </p>
+          </div>
+          
+          <p className="text-xs mb-4 text-[#CBD5E1] leading-relaxed">
+            We use cookies to enhance your experience. You can manage your preferences or 
+            <button 
+              onClick={() => navigate('/privacy')}
+              className="text-[#3B82F6] hover:underline ml-1 font-medium bg-transparent border-none p-0 cursor-pointer"
             >
-              See our Privacy Policy
-            </a>
-
+              read our policy.
+            </button>
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3">
+
+          <div className="flex gap-3">
             <button
               onClick={handleReject}
-              className="bg-[#6F6F6F] text-white px-4 py-2 rounded text-sm hover:bg-gray-600  transition"
+              className="flex-1 bg-transparent border border-[#3D4B5E] text-[#CBD5E1] px-4 py-2 rounded-lg text-xs font-bold uppercase hover:bg-white/5 transition-colors"
             >
               Reject
             </button>
             <button
               onClick={handleAccept}
-              className="bg-gray-100 text-gray-900 px-4 py-2 rounded text-sm 
-                         hover:bg-[#868386]  transition 
-                         "
+              className="flex-1 bg-[#3B82F6] text-white px-4 py-2 rounded-lg text-xs font-bold uppercase hover:bg-blue-400 transition-all shadow-lg shadow-blue-500/20"
             >
               Accept
             </button>
@@ -73,21 +77,22 @@ export default function GDPRConsent() {
         </div>
       )}
 
-      {/* Cookie Icon in Red Circle (smaller size) */}
+      {/* Revisit Icon */}
       {showIcon && !visible && (
         <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-40">
           <button
             onClick={handleIconClick}
-            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#6F6F6F] shadow-lg border border-white 
-                       flex items-center justify-center hover:scale-105 transition cursor-pointer
-                       "
+            className="w-12 h-12 rounded-full bg-[#1E293B] shadow-xl border border-[#3D4B5E] 
+                       flex items-center justify-center hover:scale-110 hover:border-[#3B82F6] transition-all cursor-pointer group"
             title="Cookie Preferences"
           >
             <img
-              src="/revisit.svg" // Use your cookie icon
+              src="/revisit.svg"
               alt="Cookie Icon"
-              className="w-5 h-5 sm:w-6 sm:h-6 object-contain"
+              className="w-6 h-6 object-contain group-hover:rotate-12 transition-transform"
             />
+            {/* changed indicator to blue */}
+            <span className="absolute top-0 right-0 w-3 h-3 bg-[#3B82F6] rounded-full border-2 border-[#1E293B]" />
           </button>
         </div>
       )}

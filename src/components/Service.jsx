@@ -41,14 +41,14 @@ const ExpandingCards = () => {
       number: '05',
       title: 'Clutches',
       description: 'Diagnosis and replacement of a worn or slipping clutch to restore smooth gear changes and reliable power transfer.',
-      image: 'https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2000&auto=format&fit=crop',
+      image: '/Clutches.png',
       
     },
     {
       number: '06',
       title: 'Exhausts',
       description: 'Inspection, repair, or replacement of exhaust components to reduce emissions, eliminate noise, and maintain engine efficiency.',
-      image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=2000&auto=format&fit=crop',
+      image: "/Exhausts.png",
       
     },
     {

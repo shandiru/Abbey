@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
                     </p>
                     <ul className="list-disc ml-6 text-white">
                         <li>Respond to inquiries and provide quotes</li>
-                        <li>Deliver scaffolding services</li>
+                        <li>Deliver Abbey Tyres services</li>
                         <li>Communicate with you about your project</li>
                         <li>Maintain business records and comply with legal requirements</li>
                     </ul>
@@ -110,11 +110,10 @@ const PrivacyPolicy = () => {
                         If you have any questions about this Privacy Policy or how we handle your personal data, please contact us:
                     </p>
                     <div className="text-white">
-                        <p><strong>Dent Monkey</strong></p>
-                        <p>Email: <a href="mailto:info@dentmonkey.com" className="text-[#4ab8e9] hover:underline">info@dentmonkey.com</a></p>
-                        <p>Phone: 07775397007</p>
-                        <p>Address: Unit 14, Broxtowe Park Business Centre Calverton Drive,
-Strelley, Mansfield NG8 6QP, United Kingdom</p>
+                          <p><strong>Abbey Tyres</strong></p>
+                          <p>Email: <a href="mailto:info@abbeytyres.co.uk" className="text-[#4ab8e9] hover:underline">info@abbeytyres.co.uk</a></p>
+                          <p>Phone: 07737 985510</p>
+                          <p>Address: 123 Abbey Rd., London NW6 4DN, United Kingdom</p>
                     </div>
                     <p className="mt-2 text-white">
                         If you are not satisfied with our response, you have the right to lodge a complaint with the{' '}

@@ -28,7 +28,7 @@ const TermsConditions = () => {
                   <section>
                       <h2 className="text-2xl font-medium">3. Intellectual Property</h2>
                       <p className="text-white">
-                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to  Dent Monkey.
+                          All content on this website (including text, images, graphics, and logos) is owned by or licensed to  Abbey Tyres.
                           You may view, download, and print content for personal use only.
                           You must not copy, reproduce, or distribute our website content without prior written consent.
                       </p>
@@ -77,11 +77,10 @@ const TermsConditions = () => {
                           If you have any questions about these Terms of Use, please contact us:
                       </p>
                       <div className="text-white">
-                          <p><strong>Dent Monkey</strong></p>
-                          <p>Email: <a href="mailto:info@dentmonkey.com" className="text-[#4ab8e9] hover:underline">info@dentmonkey.com</a></p>
-                          <p>Phone: 07775397007</p>
-                          <p>Address: Unit 14, Broxtowe Park Business Centre Calverton Drive,
-Strelley, Mansfield NG8 6QP, United Kingdom</p>
+                          <p><strong>Abbey Tyres</strong></p>
+                          <p>Email: <a href="mailto:info@abbeytyres.co.uk" className="text-[#4ab8e9] hover:underline">info@abbeytyres.co.uk</a></p>
+                          <p>Phone: 07737 985510</p>
+                          <p>Address: 123 Abbey Rd., London NW6 4DN, United Kingdom</p>
                       </div>
                   </section>
               </div>

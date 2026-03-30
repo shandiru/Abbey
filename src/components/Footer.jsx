@@ -10,9 +10,9 @@ const UniqueFooter = () => {
   const navigate = useNavigate(); // Initialize navigation
 
   const openingHours = [
-    { day: "Mon - Fri", time: "8:30 AM – 5:30 PM" },
-    { day: "Saturday", time: "8:30 AM – 1:30 PM" },
-    { day: "Sunday", time: "Closed" },
+    { day: "Mon - Fri", time: "9:00 AM – 6:00 PM" },
+    { day: "Saturday", time: "9:00 AM – 5:00 PM" },
+    { day: "Sunday", time: "10:00 AM – 4:00 PM" },
   ];
 
   const handleNavClick = (path) => {
@@ -87,8 +87,7 @@ const UniqueFooter = () => {
             <ul className="space-y-4 text-[#CBD5E1] text-sm">
               <li className="flex flex-col">
                 <span className="text-[#3B82F6] font-bold text-[10px] uppercase">Location</span>
-               123 Abbey Rd., London NW6 4DN
-United Kingdom
+               146 Prestwold Rd, Leicester LE5 0EX, United Kingdom
               </li>
               <li className="flex flex-col">
                 <span className="text-[#3B82F6] font-bold text-[10px] uppercase">Phone</span>

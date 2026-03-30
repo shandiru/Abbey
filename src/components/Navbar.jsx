@@ -64,9 +64,9 @@ const Header = () => {
             <div className="flex items-center gap-2 text-sm font-medium text-[#CBD5E1]">
               <Clock size={14} className="text-[#3B82F6]" />
               <span className="hidden sm:inline">
-                Mon–Fri 08:30–17:30 / Sat 09:00–15:00 / Sun Closed
+                Mon–Fri 09:00–18:00 / Sat 09:00–17:00 / Sun 10:00-16:00
               </span>
-              <span className="sm:hidden">Mon–Fri 08:30–17:30</span>
+              <span className="sm:hidden">Mon–Fri 09:00–18:00</span>
             </div>
           </div>
         </div>

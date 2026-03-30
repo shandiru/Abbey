@@ -1,13 +1,13 @@
 import  { useState, useRef } from "react";
 
 const HOURS = [
-  { day: "Monday", time: "8:30 am – 5:30 pm" },
-  { day: "Tuesday", time: "8:30 am – 5:30 pm" },
-  { day: "Wednesday", time: "8:30 am – 5:30 pm" },
-  { day: "Thursday", time: "8:30 am – 5:30 pm" },
-  { day: "Friday", time: "8:30 am – 5:30 pm" },
-  { day: "Saturday", time: "8:30 am – 1:30 pm" },
-  { day: "Sunday", time: "Closed" },
+  { day: "Monday", time: "9:00 am – 6:00 pm" },
+  { day: "Tuesday", time: "9:00 am – 6:00 pm" },
+  { day: "Wednesday", time: "9:00 am – 6:00 pm" },
+  { day: "Thursday", time: "9:00 am – 6:00 pm" },
+  { day: "Friday", time: "9:00 am – 6:00 pm" },
+  { day: "Saturday", time: "9:00 am – 5:00 pm" },
+  { day: "Sunday",  time: "10:00 am – 4:00 pm" },
 ];
 
 const SERVICES = [
@@ -117,7 +117,7 @@ export default function ContactSection() {
               <div>
                 <p className="text-[#3B82F6] font-bold text-[10px] uppercase tracking-wider mb-1">Address</p>
                 <address className="not-italic text-gray-600 dark:text-[#CBD5E1] leading-relaxed">
-                  123 Abbey Rd., London NW6 4DN<br />United Kingdom
+                  146 Prestwold Rd, Leicester LE5 0EX, <br /> United Kingdom
                    
                 </address>
               </div>

@@ -80,7 +80,7 @@ const HeroSection = () => {
               <div>
                 <p className="font-semibold text-black dark:text-white">Location</p>
                 <p className="text-sm text-gray-600 dark:text-[#CBD5E1]">
-                   123 Abbey Rd., London NW6 4DN, UK
+                  146 Prestwold Rd, Leicester LE5 0EX, <br /> United Kingdom
                 </p>
               </div>
             </div>

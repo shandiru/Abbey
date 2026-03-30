@@ -1,8 +1,8 @@
 import React from 'react';
 import { Facebook, Instagram, Clock, ArrowRight } from 'lucide-react';
 
-const PHONE = "07846 953888";
-const PHONE_TEL = "tel:+447846953888";
+const PHONE = "07737 985510";
+const PHONE_TEL = "tel:+447737985510";
 const EMAIL = "info@abbeytyres.co.uk"; // Replace with your actual email if different
 
 const UniqueFooter = () => {
@@ -40,7 +40,7 @@ const UniqueFooter = () => {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Abbey Tyres Logo"
                 className="w-full h-full rounded-xl border border-[#3D4B5E]"
               />
@@ -73,8 +73,8 @@ const UniqueFooter = () => {
             <ul className="space-y-3">
               {[
                 { name: 'Home', path: '/' },
-                { name: 'Our Services', path: '#services' },
-                { name: 'Tyre Search', path: '/tyres' },
+                { name: 'Services', path: '#services' },
+              
                 { name: 'Customer Reviews', path: '#reviews' },
                 { name: 'Contact Us', path: '#contact' },
               ].map((link) => (
@@ -104,8 +104,9 @@ const UniqueFooter = () => {
             <ul className="space-y-5 text-[#CBD5E1] text-sm">
               <li className="flex flex-col">
                 <span className="text-[#3B82F6] font-bold text-[10px] mb-1 uppercase tracking-wider">Location</span>
-                29 Church St, Old Basford<br />
-                Nottingham NG6 0GA
+                123 Abbey Rd., London NW6 4DN<br />
+United Kingdom
+               
               </li>
               <li className="flex flex-col">
                 <span className="text-[#3B82F6] font-bold text-[10px] mb-1 uppercase tracking-wider">Phone</span>
@@ -163,7 +164,7 @@ const UniqueFooter = () => {
             </a>
           </p>
           <div className="flex flex-wrap justify-center gap-5 text-[10px] uppercase tracking-widest font-bold">
-            {['Tyres', 'MOT', 'Servicing', 'Alignment', 'Privacy'].map((link, i) => (
+            {['Terms', 'Privacy'].map((link, i) => (
               <a
                 key={i}
                 href={`/${link.toLowerCase()}`}

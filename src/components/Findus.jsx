@@ -25,7 +25,7 @@ const FindUs = () => {
         >
           <iframe
             title="Google Map - Abbey Tyres"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.538862165981!2d-0.18815659999999998!3d51.540017299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761a9e1e4775d5%3A0x5af8964eaa9fc081!2s123%20Abbey%20Rd.%2C%20London%20NW6%204DN%2C%20UK!5e0!3m2!1sen!2slk!4v1774885516840!5m2!1sen!2slk"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.8581191161184!2d-1.1065411!3d52.6444763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487761400aa7670d%3A0x1cddabef20bd4583!2sSAFSAH%20TYRES%20LTD%20T%2FA%20ABBEY%20TYRES!5e0!3m2!1sen!2slk!4v1774891989230!5m2!1sen!2slk"
             width="100%"
             height="100%"
             allowFullScreen

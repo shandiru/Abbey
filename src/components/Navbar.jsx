@@ -86,6 +86,7 @@ const Header = () => {
                 src="logo.png"
                 alt="Logo"
                 className="h-14 bg-[#0F172A] p-2 rounded-xl border border-[#3D4B5E]"
+                loading="lazy"
               />
             </Link>
 

@@ -37,6 +37,7 @@ export default function LogoCarousel() {
                 src={brand.image} 
                 alt={brand.name} 
                 className="object-contain max-w-full max-h-full transition-all duration-300" 
+                loading="lazy"
               />
             </div>
           ))}

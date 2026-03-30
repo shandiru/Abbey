@@ -90,6 +90,7 @@ export default function GDPRConsent() {
               src="/revisit.svg"
               alt="Cookie Icon"
               className="w-6 h-6 object-contain group-hover:rotate-12 transition-transform"
+              loading="lazy"
             />
             {/* changed indicator to blue */}
             <span className="absolute top-0 right-0 w-3 h-3 bg-[#3B82F6] rounded-full border-2 border-[#1E293B]" />

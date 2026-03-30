@@ -157,7 +157,7 @@ const ExpandingCards = () => {
                 </div>
                 <p className="text-gray-600 dark:text-[#CBD5E1] text-sm leading-relaxed">{cards[activeCard].description}</p>
                 <div className="w-full h-48 sm:h-64 overflow-hidden rounded-xl border border-gray-200 dark:border-[#3D4B5E]">
-                  <img src={cards[activeCard].image} alt={cards[activeCard].title} className="w-full h-full object-cover" />
+                  <img src={cards[activeCard].image} alt={cards[activeCard].title} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 
               </div>
@@ -201,7 +201,7 @@ const ExpandingCards = () => {
                     <div className={`flex-1 flex flex-col justify-between transition-all duration-700 ${isFirst ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10 pointer-events-none'}`}>
                       <p className="text-gray-600 dark:text-[#CBD5E1] text-sm lg:text-base leading-relaxed">{card.description}</p>
                       <div className="w-full h-40 lg:h-48 overflow-hidden rounded-xl border border-gray-200 dark:border-[#3D4B5E] my-4">
-                        <img src={card.image} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                        <img src={card.image} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" loading="lazy"/>
                       </div>
                       <div className="text-[9px] lg:text-[10px] font-bold tracking-widest text-[#3B82F6] uppercase">{card.tags}</div>
                     </div>

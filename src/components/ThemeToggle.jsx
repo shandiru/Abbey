@@ -2,15 +2,27 @@ import { useEffect, useState } from "react";
 import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function ThemeToggle({ className = "" }) {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true); // ✅ default TRUE
 
   useEffect(() => {
-    setIsDark(document.documentElement.classList.contains("dark"));
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+      const isDarkMode = savedTheme === "dark";
+      setIsDark(isDarkMode);
+      document.documentElement.classList.toggle("dark", isDarkMode);
+    } else {
+      // ✅ FIRST TIME → DARK DEFAULT
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+      setIsDark(true);
+    }
   }, []);
 
   const toggle = () => {
     const root = document.documentElement;
     const next = !isDark;
+
     setIsDark(next);
     root.classList.toggle("dark", next);
     localStorage.setItem("theme", next ? "dark" : "light");
@@ -22,7 +34,9 @@ export default function ThemeToggle({ className = "" }) {
       onClick={toggle}
       className={`rounded-md border px-3 py-2.5 text-sm flex items-center
                   bg-white text-gray-900 border-gray-300
-                  dark:bg-neutral-800 dark:text-gray-100 dark:border-neutral-700 ${className} hover:bg-[#6F6F6F] cursor-pointer active:bg-[#6F6F6F] `}
+                  dark:bg-neutral-800 dark:text-gray-100 dark:border-neutral-700
+                  ${className}
+                  hover:bg-[#6F6F6F] cursor-pointer active:bg-[#6F6F6F]`}
       aria-label="Toggle dark mode"
     >
       {isDark ? <FaMoon size={18} /> : <FaSun size={18} />}

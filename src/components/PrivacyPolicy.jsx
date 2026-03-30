@@ -111,7 +111,7 @@ const PrivacyPolicy = () => {
                     </p>
                     <div className="text-white">
                           <p><strong>Abbey Tyres</strong></p>
-                          <p>Email: <a href="mailto:info@abbeytyres.co.uk" className="text-[#4ab8e9] hover:underline">info@abbeytyres.co.uk</a></p>
+                          <p>Email: <a href="mailto:Safsah@abbey-tyres.co.uk" className="text-[#4ab8e9] hover:underline">Safsah@abbey-tyres.co.uk</a></p>
                           <p>Phone: 07737 985510</p>
                           <p>Address: 146 Prestwold Rd, Leicester LE5 0EX, United Kingdom</p>
                     </div>

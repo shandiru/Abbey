@@ -87,7 +87,8 @@ const UniqueFooter = () => {
             <ul className="space-y-4 text-[#CBD5E1] text-sm">
               <li className="flex flex-col">
                 <span className="text-[#3B82F6] font-bold text-[10px] uppercase">Location</span>
-                29 Church St, Old Basford, Nottingham NG6 0GA
+               123 Abbey Rd., London NW6 4DN
+United Kingdom
               </li>
               <li className="flex flex-col">
                 <span className="text-[#3B82F6] font-bold text-[10px] uppercase">Phone</span>

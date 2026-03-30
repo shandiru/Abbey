@@ -55,7 +55,7 @@ const ExpandingCards = () => {
       number: '07',
       title: 'Bearing Work',
       description: 'Detection and replacement of worn wheel or engine bearings to eliminate noise, vibration, and prevent further mechanical damage.',
-      image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop',
+      image: '/Bearing Work.png',
      
     },
     {

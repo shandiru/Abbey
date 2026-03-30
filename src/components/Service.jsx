@@ -13,28 +13,28 @@ const ExpandingCards = () => {
       number: '01',
       title: 'Full Service',
       description: 'A comprehensive inspection and maintenance of all major vehicle systems, including oil change, filters, fluids, and a full mechanical check.',
-      image: 'https://images.unsplash.com/photo-1486006396113-ad75047f0d2e?q=80&w=2000&auto=format&fit=crop',
+      image: '/fullservice.png',
      
     },
     {
       number: '02',
       title: 'Half Service',
       description: 'A basic check covering essential items like oil, oil filter, and key fluid levels to keep your vehicle running smoothly between full services.',
-      image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2000&auto=format&fit=crop',
+      image: '/fullservice.png',
       
     },
     {
       number: '03',
       title: 'Brakes',
       description: 'Full inspection and repair of your braking system, including discs, calipers, and fluid, to ensure safe and responsive stopping power.',
-      image: 'https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?q=80&w=2000&auto=format&fit=crop',
+      image: '/brake.png',
      
     },
     {
       number: '04',
       title: 'Brake Pads',
       description: ' Replacement of worn brake pads to maintain effective braking performance and prevent damage to your discs.',
-      image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=2000&auto=format&fit=crop',
+      image: '/Brake Pads.png',
      
     },
     {

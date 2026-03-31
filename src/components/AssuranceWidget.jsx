@@ -27,23 +27,23 @@ export default function AssuranceWidget() {
   }, []);
 
   return (
-    <div
-      id="widget-preview"
-      className="ac-widget"
-      style={{
-        zIndex: 999999,
-        position: "fixed",
-        right: 0,
-        bottom: "20px",
-        maxWidth: "100vw",
-        overflow: "hidden",
-      }}
-    >
-      <style>{`
-        .ac-widget > *:not(:first-child) { 
-          display: none !important; 
-        }
-      `}</style>
-    </div>
-  );
+  <div
+    id="widget-preview"
+    className="ac-widget"
+    style={{
+      zIndex: 999999,
+      position: "fixed",
+      right: 0,
+      bottom: "20px",
+      maxWidth: "100vw",
+      overflow: "hidden",
+    }}
+  >
+    <style>{`
+      .ac-widget > *:nth-child(n+3) { 
+        display: none !important; 
+      }
+    `}</style>
+  </div>
+);
 }

@@ -3,7 +3,6 @@ import { useEffect } from "react";
 export default function AssuranceWidget() {
   useEffect(() => {
     if (document.getElementById("assurance-script")) {
-      // Script already loaded, just clear duplicate cards
       const widget = document.getElementById("widget-preview");
       if (widget && widget.children.length > 1) {
         while (widget.children.length > 1) {
@@ -22,7 +21,6 @@ export default function AssuranceWidget() {
     return () => {
       const existing = document.getElementById("assurance-script");
       if (existing) document.body.removeChild(existing);
-      // Clear widget contents on unmount so re-mount is clean
       const widget = document.getElementById("widget-preview");
       if (widget) widget.innerHTML = "";
     };
@@ -40,6 +38,12 @@ export default function AssuranceWidget() {
         maxWidth: "100vw",
         overflow: "hidden",
       }}
-    />
+    >
+      <style>{`
+        .ac-widget > *:not(:first-child) { 
+          display: none !important; 
+        }
+      `}</style>
+    </div>
   );
 }

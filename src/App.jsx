@@ -20,7 +20,16 @@ function App() {
       </Routes>
       <Footer />
       <GDPRConsent />
-      <AssuranceWidget />
+      <div
+        style={{
+          position: "fixed",
+          zIndex: 99999,
+          pointerEvents: "none",
+          inset: 0,
+        }}
+      >
+        <AssuranceWidget />
+      </div>
     </Router>
   );
 }

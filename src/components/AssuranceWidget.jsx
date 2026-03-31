@@ -13,5 +13,5 @@ export default function AssuranceWidget() {
     };
   }, []);
 
-  return <div id="widget-preview" className="ac-widget"></div>;
+  return <div id="widget-preview" className="ac-widget" style={{ zIndex: 999999, position: 'relative' }}></div>;
 }

@@ -13,5 +13,18 @@ export default function AssuranceWidget() {
     };
   }, []);
 
-  return <div id="widget-preview" className="ac-widget" style={{ zIndex: 999999, position: 'relative' }}></div>;
+  return (
+    <div
+      id="widget-preview"
+      className="ac-widget"
+      style={{
+        zIndex: 999999,
+        position: 'fixed',
+        right: 0,
+        bottom: '20px',
+        maxWidth: '100vw',
+        overflow: 'hidden',
+      }}
+    />
+  );
 }

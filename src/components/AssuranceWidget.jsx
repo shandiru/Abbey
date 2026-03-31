@@ -5,7 +5,6 @@ export default function AssuranceWidget() {
     const script = document.createElement("script");
     script.src = "https://assurance.sysnetgs.com/assurancecard/be8e7fbc4499573f54aa6807a82bb2385a9e4a19f1db66f876e9fc528d1cd947/cardJs";
     script.async = true;
-
     document.body.appendChild(script);
 
     return () => {
@@ -13,5 +12,16 @@ export default function AssuranceWidget() {
     };
   }, []);
 
-  return <div id="widget-preview" className="ac-widget"></div>;
+  return (
+    <div
+      style={{
+        position: "fixed",
+        right: 0,
+        bottom: "20px",
+        zIndex: 999999,
+      }}
+    >
+      <div id="widget-preview" className="ac-widget" />
+    </div>
+  );
 }
